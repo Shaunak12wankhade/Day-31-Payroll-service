@@ -21,7 +21,13 @@ startdate date not null
 insert into employee_payroll values
 (1,'Ashish',100000.00,'2021-04-03'),
 (2,'Abhi',200000.00,'2020-05-22'),
-(3,'Ani',300000.00,'2019-06-19')
+(3,'Ani',300000.00,'2019-06-19');
+
+
+
+--UC4--
+---Retrieve data from table
+select * from employee_payroll;
 
 
 
