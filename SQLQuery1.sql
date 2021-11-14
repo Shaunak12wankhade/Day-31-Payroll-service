@@ -61,4 +61,10 @@ alter table employee_payroll add Address varchar(250) default 'Nagpur';
 select * from employee_payroll;
 
 
+--UC9--
+---Extend table to have Basic pay,Deduction,Taxable pay,Income tax & Net pay---
+Exec sp_rename 'employee_payroll.Salary', 'BasicPay';
+alter table employee_payroll add TaxablePay float, Deduction float,IncomeTax float,NetPay float;
+
+select * from employee_payroll;
 
