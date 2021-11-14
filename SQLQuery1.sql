@@ -43,9 +43,15 @@ update  employee_payroll set Gender ='M' where name = 'Ashish';
 
 select * from employee_payroll;
 
+--UC7--
+---Calculate sum,avergae,min,max,count of employee---
+
+select SUM(Salary) as TotalSalary,Gender from employee_payroll group by Gender;
+select AVG(Salary) as AverageSalary from employee_payroll group by Gender;
+select count(Salary) as TotalSalary,Gender from employee_payroll group by Gender;
+select Min(Salary) as MinSalary,Gender from employee_payroll group by Gender;
+select Max(Salary) as MaxSalary,Gender from employee_payroll group by Gender;
 
 
 
-
---select id,name,salary,startdate From employee_payroll;             -- taken from VS of ADO.net day 33
 
