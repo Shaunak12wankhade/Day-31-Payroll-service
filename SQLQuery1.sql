@@ -19,9 +19,9 @@ startdate date not null
 --UC3--
 ---Insert table in database---
 insert into employee_payroll values
-(1,'Ashish',100000.00,'2021-04-03'),
-(2,'Abhi',200000.00,'2020-05-22'),
-(3,'Ani',300000.00,'2019-06-19');
+(1,'Ashish',100000,'2021-04-03'),                  --Format of date is Year-Month-Date
+(2,'Abhi',200000,'2020-05-22'),
+(3,'Ani',300000,'2019-06-19');
 
 
 
@@ -30,5 +30,17 @@ insert into employee_payroll values
 select * from employee_payroll;
 
 
+--UC5--
+---Retrieve specific data---
+select name, salary from employee_payroll where name = 'Abhi';     --selecting 'Abhi' entry
+select * from employee_payroll where startdate between cast('2020-01-01' as date) and getdate();                                                                 -- Cast is used to convert string as date is in string into date (int)
 
+
+
+
+
+
+
+
+--select id,name,salary,startdate From employee_payroll;             -- taken from VS of ADO.net day 33
 
