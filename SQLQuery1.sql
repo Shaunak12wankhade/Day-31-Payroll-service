@@ -53,5 +53,12 @@ select Min(Salary) as MinSalary,Gender from employee_payroll group by Gender;
 select Max(Salary) as MaxSalary,Gender from employee_payroll group by Gender;
 
 
+--Uc8--
+---Extend table to store Phonenumber,Department & Address---
+alter table employee_payroll add PhoneNumber bigint;
+alter table employee_payroll add Department varchar(250) not null default 'HR';
+alter table employee_payroll add Address varchar(250) default 'Nagpur';
+select * from employee_payroll;
+
 
 
