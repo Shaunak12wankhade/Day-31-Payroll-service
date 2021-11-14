@@ -68,3 +68,14 @@ alter table employee_payroll add TaxablePay float, Deduction float,IncomeTax flo
 
 select * from employee_payroll;
 
+
+--UC10--
+---Insert another table---
+insert into employee_payroll(id,Name,BasicPay,Startdate,Gender,PhoneNumber,Department,Address,TaxablePay,Deduction,IncomeTax,NetPay)
+ values(4,'Terissa','525245','2018/09/05','F','7345787969','Sales','Chennai','1000','4000','200','522245');
+
+insert into employee_payroll(id,Name,BasicPay,Startdate,Gender,PhoneNumber,Department,Address,TaxablePay,Deduction,IncomeTax,NetPay)
+values(5,'Terissa','525245','2018/09/05','F','7345787969','Marketing','Chennai','2000','5000','300','622245');
+
+ select * from employee_payroll;
+
