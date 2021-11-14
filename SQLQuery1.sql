@@ -36,7 +36,12 @@ select name, salary from employee_payroll where name = 'Abhi';     --selecting '
 select * from employee_payroll where startdate between cast('2020-01-01' as date) and getdate();                                                                 -- Cast is used to convert string as date is in string into date (int)
 
 
+--Uc6--
+---Alter the table to add gender---
+alter table employee_payroll add Gender char(1);
+update  employee_payroll set Gender ='M' where name = 'Ashish';
 
+select * from employee_payroll;
 
 
 
